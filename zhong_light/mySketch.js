@@ -40,6 +40,7 @@ function draw() {
 	textFont('Helvetica');
 	textSize(sizeOfText);
   textAlign(LEFT);
+  fill(0);
   noStroke();
   text("Zhong/Light, 2024.", 20, 60);
 	textAlign(CENTER);
