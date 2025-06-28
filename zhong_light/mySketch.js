@@ -13,12 +13,23 @@ var cellSize = h/2;
 var tX = 500;
 var tY = 600;
 
-var writing_guang;
+var writing_guang_1;
+var writing_guang_2;
+var writing_guang_3;
+var writing_guang_4;
+var writing_guang_5;
+var writing_guang_6;
 var still_frames;
 
 function preload() {
   // Load the GIF
-  writing_guang = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang.gif?v=1732331066349", "guang");
+  writing_guang_1 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_1.gif?v=1732555100157");
+  writing_guang_2 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_2.gif?v=1732555103717");
+  writing_guang_3 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_3.gif?v=1732555338704");
+  writing_guang_4 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_4.gif?v=1732555507701");
+  writing_guang_5 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_5.gif?v=1732555702166");
+  writing_guang_6 = createImg("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/writing_guang_6.gif?v=1732555828885");
+  
   still_guang_1 = loadImage("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/still_guang_1.png?v=1732414613674");
   still_guang_2 = loadImage("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/still_guang_2.png?v=1732414618791");
   still_guang_3 = loadImage("https://cdn.glitch.global/78d088eb-536b-4c54-9682-d312fc67d687/still_guang_3.png?v=1732414624810");
@@ -40,8 +51,8 @@ function draw() {
 	textFont('Helvetica');
 	textSize(sizeOfText);
   textAlign(LEFT);
-  fill(0);
   noStroke();
+  fill(0);
   text("Zhong/Light, 2024.", 20, 60);
 	textAlign(CENTER);
 
@@ -99,7 +110,12 @@ function drawGrid() {
 }
 
 function drawing(i, j) {
-  writing_guang.position(i * cellSize + 20, j * cellSize + 80);
+  if (second()%6 == 0) writing_guang_1.position(i * cellSize + 20, j * cellSize + 80);
+  else if (second()%6 == 1) writing_guang_2.position(i * cellSize + 20, j * cellSize + 80);
+  else if (second()%6 == 2) writing_guang_3.position(i * cellSize + 20, j * cellSize + 80);
+  else if (second()%6 == 3) writing_guang_4.position(i * cellSize + 20, j * cellSize + 80);
+  else if (second()%6 == 4) writing_guang_5.position(i * cellSize + 20, j * cellSize + 80);
+  else if (second()%6 == 5) writing_guang_6.position(i * cellSize + 20, j * cellSize + 80);
 }
 
 function drawStill(i, j) {
