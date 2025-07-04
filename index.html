@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suanna Zhong</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ckh5shu.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  </head>
+  <body>
+    <style>
+
+      :root {
+        --color-1: #ababab;
+        --color-2: #ffffff;
+        --color-3: #212121;
+      }
+
+      body {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+        font-family: "neue-haas-grotesk-display", sans-serif;
+      }
+
+      .dark-bg {
+        position:absolute;
+        top: 0;
+        width: 100vw;
+        background-color: var(--color-1); 
+        background-size: cover;
+        background-position: center;
+        color: var(--color-2);
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .light-bg {
+        position:absolute;
+        top: 0;
+        width: 100vw;
+        background-color: #ffffff; 
+        color: var(--color-3);
+        height: 100vh;        /* Full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+
+      }
+
+      h1 {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 600;
+      }
+
+      p {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 600;
+        font-style: normal;   
+        text-align: center;  
+        font-size: 18px;
+        bottom: 10px;
+      }
+    </style>
+    <section class = "dark-bg" id = "mediaContainer">
+      <h1 id = "Suanna">Suanna Zhong</h1>
+    </section>
+    <section class = "light-bg">
+        <h1 id = "Suanna">Suanna Zhong</h1>
+      <p id = "links">
+        <a href="work/landing.html">Commercial</a>, 
+        <a href="cv.html">Exhibition</a>, 
+        <a target="_blank" href="https://drive.google.com/file/d/1ZRjmYWwrbB_EfRA8MuZy4XQuN7CP8mA6/view?usp=drive_link">Resume</a>
+      </p>
+    </div>
+    <script src = "script.js">
+    </script> 
+  </body>
+</html>
